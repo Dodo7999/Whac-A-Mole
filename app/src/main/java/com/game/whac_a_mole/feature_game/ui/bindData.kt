@@ -79,7 +79,7 @@ private fun ImageView.setVisibleAndClickable(indexVisibleMole: Int, indexList: I
 	isVisible = indexList == indexVisibleMole
 }
 
-private fun ImageView.hide(){
+private fun ImageView.hide() {
 	isClickable = false
 	isVisible = false
 }

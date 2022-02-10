@@ -1,5 +1,6 @@
 package com.game.whac_a_mole.feature_result.ui
 
+import com.game.whac_a_mole.R
 import com.game.whac_a_mole.feature_game.ui.GameFragment
 import com.game.whac_a_mole.feature_start.ui.StartFragment
 import com.game.whac_a_mole.getBestScore
@@ -25,8 +26,8 @@ private fun ResultFragment.bindText() {
 	}
 
 	with(binding) {
-		bestResult.text = bestScore.toString()
-		currentResult.text = currentScore.toString()
+		bestResult.text = getBestScoreString(bestScore)
+		currentResult.text = getCurrentScoreString(currentScore)
 	}
 }
 
@@ -44,5 +45,11 @@ private fun ResultFragment.bindNavigateButton() {
 		}
 	}
 }
+
+private fun ResultFragment.getBestScoreString(bestScore: Int) =
+	getString(R.string.best_score) + " = " + bestScore.toString()
+
+private fun ResultFragment.getCurrentScoreString(currentScore: Int) =
+	getString(R.string.current_score) + " = " + currentScore.toString()
 
 private fun ResultFragment.getCurrentScore() = arguments?.getInt(SCORE) ?: 0
