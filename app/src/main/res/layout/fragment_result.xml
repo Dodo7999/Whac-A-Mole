@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:paddingHorizontal="24dp"
+	android:background="@color/brown"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/current_result"
+		android:layout_width="match_parent"
+		android:textColor="@color/brown_variant"
+		android:textStyle="bold"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="24sp" />
+
+	<TextView
+		android:id="@+id/best_result"
+		android:textColor="@color/brown_variant"
+		android:textStyle="bold"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="24sp" />
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/play_again"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/brown"
+		android:textStyle="bold"
+		android:layout_marginBottom="16dp"
+		android:text="@string/play_again"/>
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/menu"
+		android:layout_width="match_parent"
+		android:textColor="@color/brown"
+		android:textStyle="bold"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:text="@string/menu"/>
+</LinearLayout>

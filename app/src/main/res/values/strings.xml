@@ -1,0 +1,13 @@
+<resources>
+	<string name="app_name">Whac-A-Mole</string>
+	<string name="play">Play</string>
+	<string name="game_score">Score</string>
+	<string name="game_time">Time</string>
+	<string name="play_again">Play again</string>
+	<string name="menu">Menu</string>
+	<string name="best_score">Best Score</string>
+	<string name="rules">
+		Rules of the game: After pressing the "Play" button,
+		the timer will start and after 3 seconds the moles will start to look out of their holes.
+		You can click on the mole several times until he disappeared into the hole.</string>
+</resources>
